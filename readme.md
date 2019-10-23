@@ -7,7 +7,6 @@ DeployDaemon can be installed on any server and it makes setting up, and hosting
 - Run "make", this will create virtual enviroinment.
 - Run "make install", this will install the pip packages to the env.
 - Activate you venv to enter into you venv and start working - "source bin/activate"
-- ```pip install -r requirements.txt```
 - Run ```./git-hook.sh```
 - More on setup coming up....
 

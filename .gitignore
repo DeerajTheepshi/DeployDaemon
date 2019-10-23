@@ -1,0 +1,6 @@
+# Virtualenv files
+[Bb]in
+[Ii]nclude
+[Ll]ib
+.env
+__pycache__

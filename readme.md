@@ -7,6 +7,7 @@ DeployDaemon can be installed on any server and it makes setting up, and hosting
 - Run "make", this will create virtual enviroinment.
 - Run "make install", this will install the pip packages to the env.
 - Activate you venv to enter into you venv and start working - "source bin/activate"
+- Run ```./git-hook.sh```
 - More on setup coming up....
 
 ## Coding guidelines to follow
@@ -14,6 +15,6 @@ DeployDaemon can be installed on any server and it makes setting up, and hosting
 - Every file created must have a corresponding class of the same name.
 - Every class should have a constructor.
 - Install black and follow PEP 08 guidelines.
-- // Add info about hooks here //
+- A commit can be made only if the entire project is PEP8 compliant. So ensure that.
 - Before pushing code "pip freeze > requirements.txt" is must.
 

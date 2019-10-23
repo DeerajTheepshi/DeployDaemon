@@ -3,12 +3,11 @@ DeployDaemon can be installed on any server and it makes setting up, and hosting
 
 ## Setup Guidelines
 - Clone the repository.
-- Copy .env.example as .env and edit the database credentials.(Will be created soon)
-- Run "make", this will create virtual enviroinment.
-- Run "make install", this will install the pip packages to the env.
+- Copy .env.example as .env and edit the database credentials.
+- Run ```make```, this will create virtual enviroinment.
+- Run ```make install```, this will install the pip packages to the env. This will also setup the databse
 - Activate you venv to enter into you venv and start working - "source bin/activate"
 - Run ```./git-hook.sh```
-- More on setup coming up....
 
 ## Coding guidelines to follow
 - Follow oops.
@@ -16,5 +15,5 @@ DeployDaemon can be installed on any server and it makes setting up, and hosting
 - Every class should have a constructor.
 - Install black and follow PEP 08 guidelines.
 - A commit can be made only if the entire project is PEP8 compliant. So ensure that.
-- Before pushing code "pip freeze > requirements.txt" is must.
+- Before pushing code ```pip freeze > requirements.txt``` is must.
 

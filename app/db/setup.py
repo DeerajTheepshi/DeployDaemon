@@ -11,18 +11,22 @@ class setup:
     username = ""
     password = ""
     host = ""
+    db = ""
 
-    def __init__(self, username, password, host):
+    def __init__(self, username, password, host, db):
         self.username = username
         self.password = password
         self.host = host
+        self.db = db
 
     def create(self):
-        engine = create_engine("mysql://%s:%s@%s/deployD"
+        engine = create_engine("mysql://%s:%s@%s/%s"
                                % (urllib.parse.quote_plus(self.username),
                                   urllib.parse.quote_plus(self.password),
-                                  urllib.parse.quote_plus(self.host)), echo=True)
+                                  urllib.parse.quote_plus(self.host),
+                                  urllib.parse.quote_plus(self.db)), echo=True)
         Base.metadata.create_all(engine)
+        return engine
 
 # Declare Tables Schemas here------------------------------------------
 

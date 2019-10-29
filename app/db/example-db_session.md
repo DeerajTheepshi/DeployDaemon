@@ -1,4 +1,4 @@
-#DB_SESSION EXAMPLE:
+# DB_SESSION EXAMPLE:
 
 ```
 import db_session

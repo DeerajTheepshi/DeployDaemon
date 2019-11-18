@@ -1,0 +1,21 @@
+#This template was created by deployD
+#Do not alter this at any point of time.
+
+<VirtualHost *:{port}>
+	
+    #serverName_Flag
+	ServerName {serverName}
+    #serverAlias_Flag
+	ServerAlias {serverAlias}
+
+    #documentRoot_Flag
+	DocumentRoot {documentRoot}
+
+    #ReWrite rules will be added below this
+    #ReWrite_Flag
+
+    #ProxyPass will be added below this
+    #proxyPass_Flag
+    #proxyPassEnd_Flag
+	
+</VirtualHost>

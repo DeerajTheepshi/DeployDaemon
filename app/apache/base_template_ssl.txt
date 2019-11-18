@@ -1,0 +1,36 @@
+#This template was created by deployD
+#Do not alter this at any point of time.
+
+<VirtualHost *:80>
+    
+    #serverName_Flag
+	ServerName {serverName}
+    #serverAlias_Flag
+	ServerAlias {serverAlias}
+
+    RedirectPermanent / https://{serverName}/
+</VirtualHost>
+
+<VirtualHost *:443>
+	
+    #serverName_Flag
+	ServerName {serverName}
+    #serverAlias_Flag
+	ServerAlias {serverAlias}
+
+    #documentRoot_Flag
+	DocumentRoot {documentRoot}
+
+    #ssl_Flag
+    SSLEngine on
+    SSLCertificateFile {certPath}
+    SSLCertificateKeyFile {certKeyPath}
+
+    #ReWrite rules will be added below this
+    #ReWrite_Flag
+
+    #ProxyPass will be added below this
+    #proxyPass_Flag
+    #proxyPassEnd_Flag
+	
+</VirtualHost>

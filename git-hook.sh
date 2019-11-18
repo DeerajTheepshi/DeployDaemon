@@ -1,4 +1,4 @@
 echo "#!/bin/sh
-flake8 ." >> .git/hooks/pre-commit
+flake8 --filename=*.py ./app" >> .git/hooks/pre-commit
 
 chmod 777 .git/hooks/pre-commit

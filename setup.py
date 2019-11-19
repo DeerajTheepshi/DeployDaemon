@@ -8,5 +8,6 @@ if __name__ == "__main__":
     USERNAME = os.getenv("DB_USERNAME")
     PASSWORD = os.getenv("DB_PASSWORD")
     HOST = os.getenv("DB_HOST")
-    db = setup(USERNAME, PASSWORD, HOST)
+    DBNAME = os.getenv("DB_NAME")
+    db = setup(USERNAME, PASSWORD, HOST,DBNAME)
     db.create()

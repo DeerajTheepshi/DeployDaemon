@@ -1,0 +1,7 @@
+<Directory {path}>
+
+	Options Indexes FollowSymLinks
+	Allow Override none
+	Require all granted
+
+</Directory>
